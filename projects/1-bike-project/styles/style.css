@@ -12,6 +12,10 @@ body {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+div.jumbotron {
+  background-color: rgb(34, 133, 167);
+}
+
 .site-footer {
   margin-top: 4em;
 }
@@ -36,6 +40,14 @@ body {
 /* Buttons */
 .btn {
   border-radius: 0.15em;
+}
+a.btn-primary {
+  background-color: orange;
+  color: white;
+}
+a.btn-secondary {
+  background-color: black;
+  color: white;
 }
 
 /* Alert */
