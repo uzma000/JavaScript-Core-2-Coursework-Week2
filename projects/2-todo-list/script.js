@@ -1,5 +1,6 @@
 function populateTodoList(todos) {
   let list = document.getElementById("todo-list");
+  list.innerHTML = "";
 
   todos.forEach((element) => {
     let li = document.createElement("li");
@@ -74,14 +75,13 @@ function addNewTodo(event) {
   // The code below prevents the page from refreshing when we click the 'Add Todo' button.
   event.preventDefault();
   let input = document.querySelector("#todoInput");
-  let arrayOfObject = [
-    {
-      task: input.value,
-      completed: false,
-    },
-  ];
-  todos.push(arrayOfObject[0]);
-  populateTodoList(arrayOfObject);
+  let object = {
+    task: input.value,
+    completed: false,
+  };
+
+  todos.push(object);
+  populateTodoList(todos);
   input.value = "";
 
   // Write your code here... and remember to reset the input field to be blank after creating a todo!
